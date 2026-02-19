@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AUTOX Car Company</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 110px 60px auto;
+            height: 100vh;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: 150px auto;
+            background: linear-gradient(to right, #000, #444);
+            color: white;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 90px;
+            display: block;
+            margin: auto;
+        }
+
+        .site-title {
+            font-size: 30px;
+            padding-left: 20px;
+            letter-spacing: 1px;
+        }
+
+        .nav {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            background-color: #222;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            line-height: 60px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            background-color: #e74c3c;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 260px auto;
+        }
+
+        .services {
+            background-color: #fff;
+            padding: 20px;
+            border-right: 2px solid #ddd;
+        }
+
+        .services h3 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .services a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #000;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .services a:hover {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+       
+        .display {
+            border: none;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/743/743007.png" alt="Car Logo">
+        </div>
+        <div class="site-title">AUTOX – Premium Car Manufacturing</div>
+    </div>
+    <div class="nav">
+        <a href="home.html" target="contentFrame">Home</a>
+        <a href="login.html" target="contentFrame">Login</a>
+        <a href="registration.html" target="contentFrame">Register</a>
+        <a href="models.html" target="contentFrame">Models</a>
+        <a href="booking.html" target="contentFrame">Booking</a>
+        <a href="contact.html" target="contentFrame">Contact</a>
+    </div>
+
+    <div class="content">
+
+    
+        <div class="services">
+            <h3>Our Services</h3>
+            <a href="sales.html" target="contentFrame">🚗 Car Sales</a>
+            <a href="service.html" target="contentFrame">🛠 Car Servicing</a>
+            <a href="parts.html" target="contentFrame">⚙ Spare Parts</a>
+            <a href="testdrive.html" target="contentFrame">📅 Test Drive</a>
+        </div>
+
+    
+        <iframe name="contentFrame" class="display" src="home.html"></iframe>
+
+    </div>
+
+</div>
+
+</body>
+</html>
